@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layar awal</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(270deg, rgb(0, 0, 150), rgb(0, 100, 150), rgb(0, 0, 139));
+      background-size: 600% 600%;
+      animation: animasiBiru 10s ease infinite;
+      color: white
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    @keyframes animasiBiru {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    .h1{
+      color: rgb(0, 50, 245);
+      font-size: 80px;
+      font-family: Counier new, Sans-Serif;
+      text-align: center;
+    }
+    
+    .btn{
+    padding: 30px 30px;
+    font-size: 20px;
+    background-color: white;
+    color: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    }
+    
+    .btn:hover{
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="h1">Halo!<br>Ini adalah web khusus bayar-bayar<br>Web ini dibuat oleh SanzCoding</h1>
+  
+  <button class="btn" onclick=pindahHalaman()>Klik untuk liat daftar pembayaran!</button>
+  
+  <script>
+    function pindahHalaman() {
+      window.location.href =
+      "halaman2.html";
+    }
+  </script>
+</body>
+</html>
